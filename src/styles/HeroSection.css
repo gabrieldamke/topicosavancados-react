@@ -1,0 +1,26 @@
+h1 {
+  font-size: clamp(2.8rem, 1.5vw, 3rem);
+  font-weight: bold;
+  margin: 5px;
+  background: linear-gradient(
+    to right,
+    #ffffff 30%,
+     #0077cc 50%,
+    #9301b8 70% 
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 4s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: 100% center;
+  }
+}
