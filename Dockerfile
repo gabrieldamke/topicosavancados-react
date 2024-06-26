@@ -2,11 +2,11 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-COPY atividade_react/package*.json .
+COPY ./package*.json .
 
 RUN npm install
 
-COPY atividade_react .
+COPY . .
 
 EXPOSE 3001
 
